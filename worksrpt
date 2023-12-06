@@ -1,0 +1,117 @@
+#!/bin/bash
+
+# Iterate over numbers from 1 to 5
+for i in {1..5}
+do
+    echo "Number: $i"
+done
+-----------------------------------------------------------
+#!/bin/bash
+
+# Using a while loop to count from 1 to 5
+counter=1
+
+while [ $counter -le 5 ]
+do
+    echo "Count: $counter"
+    ((counter++))
+done
+--------------------------------------------------
+#!/bin/bash
+
+# Using a while loop to read user input until "exit" is entered
+input=""
+
+while [ "$input" != "exit" ]
+do
+    echo -n "Enter a value (type 'exit' to quit): "
+    read input
+    echo "You entered: $input"
+done
+----------------------------------------------------
+#!/bin/bash
+
+# Using a while loop to run a command until a certain condition is met
+file="example.txt"
+
+while [ ! -e "$file" ]
+do
+    echo "Waiting for the file to exist..."
+    sleep 1
+done
+
+echo "File $file found!"
+----------------------------------------------------
+#!/bin/bash
+
+# Using an until loop to count from 1 to 5
+counter=1
+
+until [ $counter -gt 5 ]
+do
+    echo "Count: $counter"
+    ((counter++))
+done
+---------------------------------------------------
+#!/bin/bash
+
+# Using an until loop to read user input until "exit" is entered
+input=""
+
+until [ "$input" == "exit" ]
+do
+    echo -n "Enter a value (type 'exit' to quit): "
+    read input
+    echo "You entered: $input"
+done
+----------------------------------------------------
+#!/bin/bash
+
+# Using an until loop to run a command until a certain condition is met
+file="example.txt"
+
+until [ -e "$file" ]
+do
+    echo "Waiting for the file to exist..."
+    sleep 1
+done
+
+echo "File $file found!"
+-----------------------------------------------------
+-----------------------------------------------------
+cat data.csv | awk -F',' '{print $1, $3}'
+----------------------------------------------------
+cat data.txt | awk '$2 > 50 {print $1, $2}'
+---------------------------------------------------
+cat numbers.txt | awk '{sum += $1} END {print "Sum:", sum}'
+----------------------------------------------------
+cat logfile.txt | awk '/error/ {print}'
+---------------------------------------------------
+#!/bin/bash
+
+awk 'BEGIN {print "Start of processing"} {print $1} END {print "End of processing"}' data.txt
+--------------------------------------------------------------
+ awk '/manager/ {print}' employee.txt
+------------------------------------------------------------------
+------------------------------------------------------------------
+$sed 's/unix/linux/' geekfile.txt
+-------------------------------------------------------------
+$sed 's/unix/linux/2' geekfile.txt
+---------------------------------------------------------------
+$sed 's/unix/linux/g' geekfile.txt
+-------------------------------------------------------------
+$ sed 'nd' filename.txt
+----------------------------------------------------------
+sed -n '2,5p' input_file -ptint specific input
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+echo "Hello, World!" | cut -c 1-5
+------------------------------------------------------------
+echo "apple,orange,banana" | cut -d ',' -f 2
+----------------------------------------------------------
+echo "John,Doe,25,Engineer" | cut -d ',' -f 1,3
+--------------------------------------------------------------
+cut -c 1-3,8-10 myfile.txt
+--------------------------------------------------------------
+cut -d ':' -f 1,3 /etc/passwd
+--------------------------------------------------------------
