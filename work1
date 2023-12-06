@@ -1,0 +1,154 @@
+1]]The exit code:
+-it gives outcome of exicuted commmand in 0 or non 0 integer
+-if outcome 0 means success && non 0 failure
+-Exit Codes 1-127== some failure
+-Exit Code 128+==script is terminated by a signal
+example:
+
+#!/bin/bash
+
+# Some command or script execution
+ls /nonexistent-directory
+
+# Check the exit code
+if [ $? -eq 0 ]; then
+    echo "Command or script executed successfully."
+else
+    echo "Command or script encountered an error. Exit code: $?"
+fi
+
+--------------------------------------------------------------------------------------
+2]].variables:
+-name=value
+-age=18
+ echo "Age: $age"
+1.readonly variable: after variable mark readoly its value cannot be changed
+-#!/bin/sh
+
+NAME="Zara Ali"
+readonly NAME
+NAME="Qadiri"
+
+2.unsetting variable: unset or delete variable from the list
+-#!/bin/sh
+
+NAME="Zara Ali"
+unset NAME
+echo $NAME
+
+3.Type of variable:
+a.Local: present within the current instance of the shell
+name=xyz
+b.Envermental: commanly used variables
+export PATH=/home/xyz
+c.shell variable: set by shell.both local and envinmtl
+
+special variables:
+
+$0=filename of current script
+$n=agrument
+$#=Number of arguments
+$*=All arguments single string
+$@=All arguments separate string
+$?=exit status of the last command
+$$=Process ID current script
+$!=PID of the last background command
+
+----------------------------------------------------------------------------------------------------
+3]]conditional statement
+-expression:
+1.Numeric Comparisons:			
+-eq: Equal to
+-ne: Not equal to
+-lt: Less than
+-le: Less than or equal to
+-gt: Greater than
+-ge: Greater than or equal to
+
+2. String Comparisons:					
+=: Equal to (for string comparison)
+!=: Not equal to (for string comparison
+
+3. File and Directory Checks:
+-e: Checks if a file or directory exists
+-f: Checks if it is a regular file
+-d: Checks if it is a directory
+
+4. Logical Operators:
+!: Logical NOT
+-a: Logical AND
+-o: Logical OR
+
+5. File Permission Checks:
+-r: Readable
+-w: Writable
+-x: Executable
+
+6.Arithmetic Operators:
+Addition: +
+Subtraction: -
+Multiplication: *
+Division: /
+Modulus (Remainder): %
+
+-------------------------------------------------------------------------------------------------------
+4]]Loops
+1.while loop  	- condition is true
+2.for loop   	- iterate over every value
+3.until loop	-condition is false
+
+-------------------------------------------------------------------------------------------------------
+5]]output redirectors: we can redirect output of any file folder we can by using some commands.
+1. Overwrite Redirection: (>) overwite the cntent in the file
+2. append Redirection: (>>) add cntent 
+3. merge : a >& b
+4. Error: wrong command
+
+-----------------------------------------------------------------------------------------------
+6]]ulimit:used to set or display user-level resource limits
+-ulimit -a --display the current resource limits for the shell session
+-ulimit -c unlimited --Setting Resource Limits
+Common Resource Types:
+-c: Core dump size (in number of 512-byte blocks)
+-f: File size (in 512-byte blocks)
+-d: Data area size (in kilobytes)
+-s: Stack size (in kilobytes)
+-v: Virtual memory size (in kilobytes)
+-l: Locked-in-memory size (in kilobytes)
+-u: Number of processes available to a user
+
+----------------------------------------------------------------
+7]]openfile limit:open file limit" refers to the maximum number 
+                  of file descriptors that a process can have open simultaneously
+-ulimit -n -display
+-ulimit -n <new_limit>
+
+---------------------------------------------------------------------
+8]]awk command: scripting language used for manipulating data and generating reports.
+syntax:awk options 'selection _criteria {action }' input-file > output-file
+
+
+
+---------------------------------------------------------------------
+9]]sed:Can do insertion, deletion, search and replace(substitution)
+Syntax: sed OPTIONS... [SCRIPT] [INPUTFILE...] 
+-s: substitution operation
+-/: delimiters
+---------------------------------------------------------------------
+10]]cut:used for cutting out sections from each line of a file or from a pipeline.
+syntax: cut OPTION... [FILE]
+-c, --characters=LIST: Select only these characters.
+-f, --fields=LIST: Select only these fields; also, print any line that contains no delimiter character, unless the -s option is specified.
+-d, --delimiter=DELIM: Use DELIM instead of TAB for field delimiter.
+-------------------------------------------------------------------------
+11]]wget:used to download files from the web.
+wget [options] [URL]
+-o =specific output
+-c =continues download
+-b =download in background
+-r =download entire website
+12]]
+
+
+
+
