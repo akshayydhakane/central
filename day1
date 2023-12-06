@@ -1,0 +1,71 @@
+disk partition :
+Disk /dev/sda: 70 GiB, 75161927680 bytes, 146800640 sectors
+Disk model: VMware Virtual S
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: AF0BB68A-93AB-4B6B-B748-53B6051FA1D3
+
+
+Device       Start       End   Sectors  Size Type
+/dev/sda1     2048      4095      2048    1M BIOS boot (the process of booting a computer using the Basic Input/Output System (BIOS) firmware)
+/dev/sda2     4096   1054719   1050624  513M EFI System (The EFI System Partition is a small partition on the storage device that holds EFI boot loaders and related files. It is a critical component for the UEFI boot process.
+/dev/sda3  1054720 146798591 145743872 69.5G Linux filesystem (ext4- Fourth Extended File System)(sda- first sata drive) 
+
+
+disk partition:
+fdisk
+gparted command - partition - resize/move 
+
+
+Directory structure:
+
+
+1.bin  : binary or executable programs,command used by all user
+2.boot : bootable files for linux
+3.etc	:all system configuration files
+4.home	:home directory for all user
+5.root	:home directory for root user
+6.sbin	:command used by only root user
+7.mnt	:for the temporary mounting of filesystems or directories
+8.opt	:optional or third party software
+9.tmp	:temporary space
+10.usr	:user related programm, by default softwares installed in this directory
+11.var	:log files
+12.sys	:It is a virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system.
+13.dev	:It is the location of the device files such as dev/sda1, dev/sda2, etc.
+14.proc	:all info about running process with process id
+15.lib	:contain kernal modules and shared library
+
+
+static network configuration:
+
+
+sudo nano /etc/netplan/01-network-manager-all.yaml
+sudo netplan apply
+(generate:26729): WARNING **: 12:37:59.518: gateway4 has been deprecated, use default routes instead.
+
+
+package installation:
+apache2
+git
+
+
+setup root user and passwd
+cat /etc/passwd
+
+
+ssh configuration:
+
+
+install opessh-server
+ssh-keygen generate
+cd /etc/sudoers - sudo privilage
+
+
+Git:
+git clone/add/commit/push/pull/git branch/git checkout/merge
+crete repo
+
+Today
