@@ -5,4 +5,8 @@
 3.redis
 4.rebbitMQ
 5.gitlab
-6.
+6.nagios
+7.reverse proxy
+8.virtual host
+9.wordpress
+10.
