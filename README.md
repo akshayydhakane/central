@@ -9,4 +9,6 @@
 7.reverse proxy
 8.virtual host
 9.wordpress
-10.
+10..env
+11.package.json
+12.
