@@ -1,45 +1,20 @@
-Deploy ReactJS/Angular Project
+************************ Deploy ReactJS/Angular Project ******************************************************
 
 
-Clone Git Project To Server
-
-Project path - /var/www/html/
+*Clone Git Project To Server
+*Project path - /var/www/html/
 # git clone <Git Url>
-
-
-
-Install Node Modules
-
-Go To Project path
-
-
+*Install Node Modules
+*Go To Project path
 - select specific node version & apply 
-
-
-
 # npm install
-
-
-
-Create ReactJs Project Build
-
-
+*Create ReactJs Project Build
 # npm run build
 # mv build build_live
-
-
-
-Create Angular Project Build
-
-
+*Create Angular Project Build
 # npm run build
 # mv dist build_live
-
-
-
-Create htaccess file in project path
-
-
+*Create htaccess file in project path
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /subdirectory
@@ -50,24 +25,11 @@ RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
 </IfModule>
 
-
-
-Create VirtualHost File
-
-Go to virtual host path
-
-
+*Create VirtualHost File
+*Go to virtual host path
 # /etc/apache/sites-available/
-
-
-
 Create .conf file  
-
-
-
 Sample Virtual host :-
-
-
 <VirtualHost *:80>
     ServerAdmin jay.zalavadiya@artoon.in
     ServerName cscallbreakcms.artoon.in
@@ -99,18 +61,10 @@ SSLCertificateChainFile /etc/ssl/intermediate.crt
 
 
 Then
-
 # apache2ctl configtest
 # a2ensite (project configfile name)
-
-
-
 # systemctl apache2 restart  
-
-
-
-Create Reverse Proxy Virtual Host For Project in 172.20.12.5 server
-
+*Create Reverse Proxy Virtual Host For Project in 172.20.12.5 server
 <VirtualHost :443>
     ServerName ldf.artoon.in
 
@@ -149,22 +103,10 @@ SSLCertificateChainFile /etc/ssl/intermediate.crt
 
 # systemctl apache2 restart 
 # systemctl apache2 reload 
-
-
-
-# Point DNS Record With That Sub-Domain
-
-
-
-React Project CI/CD
-
-Create gitlab-runner for CI/CD
-
-
+###Point DNS Record With That Sub-Domain
+*React Project CI/CD
+*Create gitlab-runner for CI/CD
 # sudo gitlab-runner register
-
-
-
 deploy_dev:
   stage: deploy
   tags: 
