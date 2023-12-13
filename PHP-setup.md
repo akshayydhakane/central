@@ -1,49 +1,25 @@
-PHP Setup In Ubuntu With Multiple Version
+************* PHP Setup In Ubuntu With Multiple Version ************************
 
 
-PHP
-
+*PHP
 # sudo apt update  
 # sudo apt upgrade  
-
-
-
 # sudo apt-get install software-properties-common -y
 # sudo add-apt-repository ppa:ondrej/php
-
-
-
 # sudo apt update 
-
-
-install specific php version
-
+*install specific php version
 # sudo apt install php8.1  
 # sudo apt install php7.4  
 # sudo apt install php5.6  
-
-
-Installing PHP Versions 8.1 && 7.2 with PHP-FPM
-
+*Installing PHP Versions 8.1 && 7.2 with PHP-FPM
 # sudo apt-get install php8.1 php8.1-fpm php8.1-mysql libapache2-mod-php8.1
-
-
-
 # sudo apt-get install php7.2 php7.2-fpm php7.2-mysql libapache2-mod-php7.2 
-
-
-
-php8.1-fpm provides the Fast Process Manager
-php8.1-mysql connects PHP to the MySQL database
-libapahce2-mod-php8.1 provides the PHP module for the Apache webserver
-
-After install both php-fpm version check service :-
-
+*php8.1-fpm provides the Fast Process Manager
+*php8.1-mysql connects PHP to the MySQL database
+*libapahce2-mod-php8.1 provides the PHP module for the Apache webserver
+*After install both php-fpm version check service :-
 # sudo systemctl start php8.1-fpm
 # sudo systemctl status php8.1-fpm
-
-
-
 Output
 ● php8.1-fpm.service - The PHP 8.1 FastCGI Process Manager
    Loaded: loaded (/lib/systemd/system/php8.1-fpm.service; enabled; vendor preset: enabled)
@@ -63,8 +39,6 @@ Output
 By defaulf server use latest php version
 
 # sudo update-alternatives --config php
-
-
 using this command you can switch to other version
 There are 4 choices for the alternative php (providing /usr/bin/php).
 
@@ -77,33 +51,16 @@ There are 4 choices for the alternative php (providing /usr/bin/php).
 
 Press  to keep the current choice[*], or type selection number: 2
 
-
 Some file need other extension for php so add extension using this command
-
 # sudo apt install php8.1-[extension]
 # sudo apt install php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl  
-
-
-If you add multiple extension then use command like this,
-
+*If you add multiple extension then use command like this,
 # sudo apt install php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl  
-
-
-Main PHP configuration file location :-
-
+*Main PHP configuration file location :-
 # cd /etc/php/8.1
-
-
-installed PHP modules are stored under :-
-
+*installed PHP modules are stored under :-
 # cd /etc/php/8.1/mods-available  
-
-
 Now,uninstall php version,
-
 # sudo apt remove php8.1
-
-
-if you also remove all other php modules then use this command,
-
+*if you also remove all other php modules then use this command,
 # sudo apt remove php8.1*  
