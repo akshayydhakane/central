@@ -1,0 +1,1295 @@
+@import "style";
+@import "comman-modal";
+
+.holiday-page {
+  padding-top: 118px;
+  @include m-575 {
+    padding-top: 105px;
+  }
+  .details_of_transaction {
+    .comman_tabs-sec {
+      .comm_tabing {
+        margin-bottom: 40px;
+        li {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+h1.banner_title {
+  font: normal normal 800 44px/54px "Urbanist";
+  color: #16181d;
+  margin-bottom: 16px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 800 28px/36px "Urbanist";
+  }
+}
+h2.banner_title {
+  font: normal normal 800 44px/54px "Urbanist";
+  color: #16181d;
+  margin-bottom: 16px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 800 28px/36px "Urbanist";
+  }
+}
+h2 {
+  font: normal normal 800 42px/50.4px "Urbanist";
+  color: #16181d;
+  margin-bottom: 16px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 800 28px/36px "Urbanist";
+  }
+}
+h3 {
+  font: normal normal 800 32px/41.6px "Urbanist";
+  color: #0b0c0e;
+  margin-bottom: 40px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 800 28px/34px "Urbanist";
+    margin-bottom: 20px;
+  }
+}
+h4.market_title {
+  font: normal normal 600 24px/32px "Inter";
+  color: #16181d;
+  margin-bottom: 16px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 600 24px / 30px "Inter";
+  }
+  span {
+    color: #2a948f;
+  }
+}
+h4 {
+  font: normal normal 600 24px/32px "Inter";
+  color: #16181d;
+  margin-bottom: 16px;
+  @media screen and (max-width: 480px) {
+    font: normal normal 600 24px / 30px "Inter";
+  }
+  span {
+    color: #2a948f;
+  }
+}
+h4.market_title span a {
+  color: #2a948f;
+}
+h4.sesstion_title {
+  font: normal normal 600 24px/30px "Inter";
+  color: #16181d;
+  margin-bottom: 16px;
+}
+.text_center {
+  text-align: center;
+}
+p.banner_title_content {
+  font: normal normal 400 18px/26px "Inter";
+  color: #16181d;
+  max-width: 690px;
+}
+p.market_content {
+  font: normal normal 400 16px/24px "Inter";
+  color: #16181d;
+  margin-bottom: 40px;
+}
+.comman_banner-section {
+  background: #e6f5de;
+  padding: 80px 0;
+  @media screen and (max-width: 480px) {
+    padding: 40px 0;
+  }
+}
+
+.comman_tabs-sec {
+  padding: 80px 0;
+  @media screen and (max-width: 480px) {
+    padding: 40px 0;
+  }
+  h2.title {
+    margin-bottom: 60px;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+  .comm_tabing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    margin-bottom: 60px;
+    li {
+      margin-bottom: 24px;
+      @media screen and (max-width: 480px) {
+        margin-bottom: 12px;
+      }
+      .btn_tab {
+        display: inline-block;
+        font: normal normal 500 14px/22px "Inter";
+        color: #16181d;
+        padding: 17px 19.5px;
+        border: 1px solid #c5cad3;
+        background: #fff;
+        border-radius: 8px;
+        @media screen and (max-width: 480px) {
+          padding: 9px 12px;
+        }
+        &.active {
+          font: normal normal 700 14px/20px "Inter";
+          color: #2a948f;
+          border: 1px solid #2a948f;
+          background: #ebf9f9;
+        }
+        &.more_btn {
+          font: normal normal 600 14px/20px "Inter";
+          // border: 0;
+          color: #2a948f;
+        }
+      }
+    }
+  }
+}
+.commn_table {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e4e9;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      &:nth-child(even) {
+        background-color: #f5f8f9;
+      }
+      &.active {
+        background: #d7f4f2;
+      }
+      // &:hover {
+      //   background: #d7f4f2;
+      // }
+    }
+
+    thead {
+      th {
+        font: normal normal 600 20px/24px "Inter";
+        color: #16181d;
+        padding: 25px 24px;
+        text-align: left;
+        background: #f5f8f9;
+        // border: 1px solid #e2e4e9;
+        white-space: nowrap;
+        border-right: 1px solid #e2e4e9;
+        border-bottom: 1px solid #e2e4e9;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    tbody {
+      td {
+        font: normal normal 500 14px/22px "Inter";
+        color: #16181d;
+        padding: 18px 24px;
+        text-align: left;
+        // border: 1px solid #e2e4e9;
+        border-top: 0;
+        border-bottom: 0;
+        border-right: 1px solid #e2e4e9;
+        &:last-child {
+          border-right: 0;
+        }
+        span {
+          font: normal normal 600 18px/24px "Inter";
+          color: #16181d;
+        }
+        &:first-child {
+          font: normal normal 600 16px/24px "Inter";
+          color: #16181d;
+        }
+      }
+    }
+  }
+  &.pricing_comparison_table {
+    table {
+      thead {
+        th {
+          text-align: center;
+          .icon-view {
+            width: 24px;
+            height: 24px;
+            margin: auto;
+          }
+        }
+      }
+      tbody {
+        td {
+          text-align: center;
+          &:first-child {
+            width: 27% !important;
+          }
+          p {
+            font: normal normal 500 14px/24px "Inter";
+            color: #16181d;
+            // max-width: 263px;
+            // margin: auto;
+            &:not(:last-of-type) {
+              margin-bottom: 20px;
+            }
+            img{
+              margin: auto;
+            }
+          }
+          .icon-view {
+            width: 24px;
+            height: 24px;
+            margin: auto;
+          }
+          &:first-child p {
+            text-align: left;
+            font: normal normal 600 16px/24px "Inter";
+            color: #16181d;
+          }
+          &:first-child {
+            ul {
+              li {
+                text-align: left;
+                font: normal normal 500 16px/24px "Inter";
+                color: #16181d;
+                list-style: disc;
+              }
+            }
+          }
+          ul {
+            padding-top: 20px;
+            padding-left: 24px;
+            li {
+              font: normal normal 500 16px/24px "Inter";
+              color: #16181d;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.details_of_market-relete {
+  padding: 40px 0;
+  padding-bottom: 120px;
+  @media screen and (max-width: 480px) {
+    padding: 30px 0;
+    padding-bottom: 30px;
+  }
+  h4.market_title {
+    margin-bottom: 40px;
+    @include m-767 {
+      margin-bottom: 30px;
+    }
+    @include m-575 {
+      margin-bottom: 20px;
+    }
+  }
+  .market-info {
+    .market_session {
+      ul {
+        padding-left: 20px;
+        li {
+          list-style: disc;
+        }
+      }
+    }
+  }
+}
+.market-info {
+  border: 1px solid #e2e4e9;
+  padding: 40px 32px;
+  padding-bottom: 0;
+  border-radius: 24px;
+  background: #f8f8f8;
+  @media screen and (max-width: 480px) {
+    padding: 30px 20px;
+  }
+  h2.title {
+    font: normal normal 800 32px/41px $font_2;
+    margin-bottom: 40px;
+    @include m-767 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @include m-575 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  .market_session {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    h3 {
+      font: normal normal 600 24px / 30px "Inter";
+      color: #16181d;
+      margin-bottom: 16px;
+      @media screen and (max-width: 480px) {
+        font: normal normal 600 20px / 28px "Inter";
+        margin-bottom: 8px;
+      }
+    }
+    p {
+      font: normal normal 400 16px/24px "Inter";
+      color: #16181d;
+      margin-bottom: 8px;
+      @media screen and (max-width: 480px) {
+        font: normal normal 400 14px/20px "Inter";
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+// =============== holiday Comman Pagesa =======================//
+.holiday-page {
+  .comman_tabs-sec .comm_tabing {
+    margin-bottom: 16px;
+  }
+  .sec_faqs {
+    padding-top: 0;
+    @media screen and (max-width: 480px) {
+      padding-bottom: 40px;
+    }
+  }
+  .sec_faqs.contact-us-faq.sec_faqs_refer {
+    padding-bottom: 80px;
+    @include m-767 {
+      padding-bottom: 60px;
+    }
+  }
+  .desclaimer_faq_ques {
+    .contact-us-faq-inner {
+      .faq_question_answer {
+        display: block !important;
+        .question.active + .answercont {
+          min-height: 96px !important;
+        }
+      }
+    }
+  }
+  .sec_blog {
+    @media screen and (max-width: 480px) {
+      padding-bottom: 40px;
+    }
+    .container {
+      max-width: 1230px;
+    }
+    .blog-article .blog-grid {
+      margin-top: 0;
+    }
+  }
+  .sec_blog .blog_heading .btn_view_more {
+    @media screen and (max-width: 480px) {
+      padding: 8px 15px;
+    }
+  }
+  section.sec_faqs {
+    padding-top: 0;
+    padding-bottom: 120px;
+    @media screen and (max-width: 480px) {
+      padding-bottom: 40px;
+    }
+  }
+  .market_session {
+    ul {
+      li {
+        font: normal normal 400 16px/24px "Inter";
+        color: #16181d;
+      }
+    }
+  }
+}
+
+.us-market-holidays {
+  .comman_tabs-sec {
+    padding-bottom: 60px;
+  }
+}
+
+.settlement-or-clearing-holiday {
+  .comman_tabs-sec {
+    padding-bottom: 60px;
+  }
+  .details_of_market-relete {
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+  }
+  .market-info {
+    padding-bottom: 16px;
+    p.market_content {
+      margin-bottom: 16px;
+    }
+  }
+  p.market_content {
+    margin-bottom: 32px;
+  }
+}
+
+.muhurat-trading {
+  .comman_tabs-sec {
+    .list_of_holidays_decription {
+      margin-bottom: 26px;
+      // padding-top: 20px;
+      p {
+        font: normal normal 500 16px/24px "Inter";
+        color: #16181d;
+        margin-bottom: 16px;
+      }
+    }
+    .below_table_description {
+      p {
+        font: normal normal 500 16px/24px "Inter";
+        color: #16181d;
+        margin-bottom: 16px;
+      }
+    }
+    .commn_table {
+      margin-bottom: 40px;
+    }
+  }
+  .details_of_market-relete {
+    padding: 80px 0;
+    padding-top: 0;
+    @include m-575 {
+      padding: 30px 0;
+      padding-top: 0;
+    }
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+    p.market_content {
+      margin-bottom: 0;
+      max-width: 930px;
+    }
+  }
+}
+
+.bse-holiday {
+  .comman_tabs-sec {
+    padding-bottom: 0;
+  }
+  .details_of_market-relete {
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+    .market-info {
+      margin-top: 40px;
+      .market_session {
+        ul {
+          padding-bottom: 32px;
+          padding-left: 26px;
+          li {
+            font: normal normal 400 16px/24px "Inter";
+            color: #16181d;
+            margin-bottom: 8px;
+
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nse-holiday {
+  .comman_tabs-sec {
+    padding-bottom: 0;
+  }
+  .details_of_market-relete {
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+    .market-info {
+      margin-top: 40px;
+      .market_session {
+        ul {
+          padding-bottom: 32px;
+          padding-left: 26px;
+          li {
+            font: normal normal 400 16px/24px "Inter";
+            color: #16181d;
+            margin-bottom: 8px;
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mcx-holiday {
+  .mcx_holidaypage {
+    .commn_table {
+      margin-bottom: 40px;
+      table {
+        td {
+          &:first-child {
+            font: normal normal 600 16px/20px "Inter";
+            color: #16181d;
+          }
+        }
+      }
+    }
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+  }
+  .comman_tabs-sec {
+    padding-bottom: 0;
+  }
+  .below_table_description {
+    border: 1px solid #e2e4e9;
+    padding: 40px 32px;
+    border-radius: 24px;
+    background: #f8f8f8;
+    margin-top: 60px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        list-style: disc;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .details_of_market-relete {
+    padding-bottom: 0;
+    h4.market_title {
+      margin-bottom: 16px;
+    }
+    .market-info{
+      padding-bottom: 40px;
+      @include m-575{
+        padding-bottom: 24px;
+      }
+    }
+  }
+  .sec_blog {
+    padding-top: 80px;
+  }
+}
+// .nse-holiday,.bse-holiday,.mcx-holiday,.holiday-page,.us-market-holiday 
+.holiday-page:not(.muhurat-trading){
+  .commn_table{
+    table{
+      thead{
+        th{
+          &:first-child{
+            @include m-575{
+              display: none;
+            }
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            &:first-child{
+              @include m-575{
+                display: none;
+              }
+            }
+            &:nth-child(3){
+              @include m-575{
+                min-width: 160px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// ==========diffent banner view=============//
+.pricing {
+  padding-top: 118px;
+  @include m-575 {
+    padding-top: 105px;
+  }
+  .comman_banner-section {
+    background: url(../img/pricing_banner.webp) no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 510px;
+    padding-top: 120px;
+    @include m-1599 {
+      background-position: center;
+    }
+    @include m-1199 {
+      padding-top: 80px;
+    }
+    @include m-767 {
+      padding-top: 60px;
+    }
+    @include m-575 {
+      padding-top: 40px;
+    }
+    p.banner_title_content {
+      max-width: 632px;
+      margin: auto;
+    }
+  }
+
+  .commn_table table tbody td:first-child {
+    width: 20%;
+  }
+
+  .desclaimer_faq_ques {
+    padding: 0;
+    padding-bottom: 120px;
+    .container {
+      // padding: 0;
+      .faq_question_answer:last-child {
+        border: 1px solid #e2e4e9;
+        border-radius: 12px;
+        // max-height: 160px;
+      }
+      .faq_question_answer .question:hover {
+        background: transparent;
+      }
+      .faq_question_answer .question {
+        font: normal normal 600 24px / 30px "Inter";
+        color: #16181d;
+        padding-bottom: 16px;
+        @include m-991 {
+          font-size: 20px;
+          line-height: 26px;
+        }
+        @include m-575 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      .faq_question_answer .question.active {
+        background: transparent;
+      }
+      .faq_question_answer .answer {
+        background: transparent;
+        font: normal normal 400 18px / 30px "Inter";
+        color: #16181d;
+        ol {
+          padding-left: 24px;
+          li {
+            font: normal normal 500 16px / 24px "Inter";
+            color: #16181d;
+            margin-bottom: 20px;
+            list-style: auto;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .faq_question_answer .question::after {
+        filter: brightness(0.1) invert(0.3);
+      }
+    }
+  }
+  .comman_tabs-sec .comm_tabing li.active a {
+    font-weight: 700;
+    background: #ebf9f9;
+    color: #2a948f;
+    border: 1px solid #2a948f;
+  }
+  .details_of_transaction {
+    padding: 40px 0 120px;
+    @include m-1199 {
+      padding: 40px 0 80px;
+    }
+    @include m-767 {
+      padding: 40px 0 60px;
+    }
+    @include m-575 {
+      padding: 40px 0;
+    }
+  }
+  .commn_table table tbody td {
+    padding: 18px 24px;
+  }
+}
+
+/************************* disclaimer page css ****************/
+.disclaimer {
+  padding: 87px 0 0 0;
+  .comman_banner-section {
+    background-color: #ebf9f9;
+  }
+  .comman_tabs-sec {
+    padding-bottom: 0;
+    .comm_tabing {
+      gap: 15px;
+      margin-bottom: 0;
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .details_of_disclaimer {
+    padding: 40px 0 0 0;
+    h2 {
+      margin-bottom: 40px;
+      @include m-767 {
+        margin-bottom: 30px;
+      }
+      @include m-767 {
+        margin-bottom: 20px;
+      }
+    }
+    h3 {
+      font: normal normal 600 24px/32px "Inter";
+      color: #0b0c0e;
+      margin-bottom: 24px;
+      margin-top: 26px;
+      @include m-575 {
+        margin-bottom: 20px;
+        margin-top: 8px;
+      }
+    }
+    p {
+      font: normal normal 400 16px/24px "Inter";
+      color: #16181d;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 40px;
+      }
+      a {
+        color: #2a948f;
+      }
+      @include m-575 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    h5 {
+      font: normal normal 700 22px/28px $font_1;
+      color: #0b0c0e;
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 30px;
+      margin-bottom: 48px;
+      @include m-575 {
+        margin-bottom: 30px;
+      }
+      li {
+        list-style: disc;
+        font: normal normal 400 16px/24px $font_1;
+        margin-bottom: 16px;
+      }
+    }
+    ul:last-child {
+      margin-bottom: 0;
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .faq_question_answer {
+      margin-bottom: 40px;
+      @include m-575 {
+        margin-bottom: 30px;
+      }
+      .question {
+        font: normal normal 600 24px/32px "Inter";
+        padding: 0 40px 32px 0;
+        position: relative;
+        border-bottom: 1px solid #e2e4e9;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        @include m-991 {
+          font-size: 20px;
+          line-height: 26px;
+        }
+        @include m-575 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 24%;
+          right: 15px;
+          transition: 0.2s;
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 7V15M7 11H15M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="%2316181D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+          background-repeat: no-repeat;
+          background-size: 20px;
+          background-position: center;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+        }
+      }
+      .question.active {
+        font-weight: 600;
+        background: transparent;
+        border-bottom: 0;
+        padding-bottom: 20px;
+        &::after {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none"><path d="M7 11.5H15M21 11.5C21 17.0228 16.5228 21.5 11 21.5C5.47715 21.5 1 17.0228 1 11.5C1 5.97715 5.47715 1.5 11 1.5C16.5228 1.5 21 5.97715 21 11.5Z" stroke="%2316181D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        }
+      }
+      .answercont {
+        max-height: 100%;
+        overflow: hidden;
+        transition: 0.3s;
+      }
+      .answer {
+        font: normal normal 400 18px/30px "Inter";
+        color: #16181d;
+        padding: 0;
+        background: transparent;
+        @include m-575 {
+          font-size: 16px;
+          line-height: 28px;
+        }
+        p {
+          font: normal normal 400 16px/24px $font_1;
+          margin-bottom: 16px;
+          @include m-575 {
+            font-size: 16px;
+            line-height: 28px;
+          }
+          a {
+            color: $font-color-2;
+          }
+        }
+      }
+    }
+  }
+
+  .disclaimer-contact {
+    margin-top: 120px;
+    background-image: url(../img/disclaimer-contact-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 80px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    @include m-991 {
+      padding: 40px;
+      margin-top: 80px;
+    }
+    @include m-767 {
+      margin-top: 60px;
+    }
+    @include m-575 {
+      margin-top: 40px;
+      padding: 30px 20px;
+    }
+    .disclaimer-contact-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      justify-content: space-between;
+      @include m-575 {
+        justify-content: center;
+      }
+    }
+    @include m-767 {
+      justify-content: center;
+    }
+    @include m-575 {
+      flex-direction: column;
+    }
+    .disclaimer-contact-left {
+      h3 {
+        font: normal normal 800 40px/48px $font_2;
+        margin: 0;
+        color: #0b0c0e;
+        @include m-575 {
+          font-size: 30px;
+          line-height: 38px;
+        }
+      }
+    }
+    .disclaimer-contact-right {
+      display: flex;
+      gap: 64px;
+      align-items: center;
+      @include m-575 {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+      }
+      .disclaimer-contact-right-box {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #00000033;
+          height: 90%;
+          width: 1px;
+          transform: translateY(-50%);
+          right: -32px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          @include m-575 {
+            display: none;
+          }
+        }
+        svg,
+        img {
+          width: 40px;
+          height: 40px;
+          margin: auto auto 16px auto;
+          @include m-575 {
+            margin-bottom: 10px;
+          }
+        }
+        h5 {
+          font-weight: 500;
+          color: $font-color;
+          margin-bottom: 0;
+          a {
+            color: $font-color;
+            font: normal normal 500 24px/29px $font_1;
+            @include m-575 {
+              font-size: 20px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      .disclaimer-contact-right-box:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.privacy-policy {
+  .details_of_disclaimer {
+    .faq_question_answer:first-of-type {
+      margin-top: 40px;
+    }
+  }
+}
+// ============pricing-page ==================//
+.pricing {
+  .best_plan_cart {
+    margin-top: -190px;
+    padding-bottom: 70px;
+    @include m-767 {
+      padding-bottom: 60px;
+      margin-top: -240px;
+    }
+    @include m-575 {
+      padding-bottom: 40px;
+    }
+    .all_plan_cart {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      column-gap: 16px;
+      flex-wrap: wrap;
+      .plan_cart {
+        width: calc(33.33% - 16px);
+        min-height: 456px;
+        border: 1px solid #e2e4e9;
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 24px 22px;
+        transition: all 0.4s;
+        @media screen and (max-width: 1024px) {
+          width: calc(50% - 16px);
+          margin-bottom: 24px;
+        }
+        @media screen and (max-width: 769px) {
+          width: 100%;
+        }
+        &.active {
+          border: 1px solid #2a948f;
+          background: #ebf9f9;
+          .open-ac-btn .btn {
+            color: #fff;
+            background: #2e4757;
+            // border: 1px solid #2e4757;
+            &:hover {
+              background: #476d85;
+              border: #476d85;
+            }
+          }
+        }
+        // &:hover .open-ac-btn .btn {
+        //   color: #fff;
+        //   background: #2e4757;
+        //   border: 1px solid #2e4757;
+        // }
+        .title_icon {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          justify-content: center;
+          border-bottom: 1px solid #e2e4e9;
+          padding-bottom: 24px;
+          margin-right: -22px;
+          margin-left: -22px;
+          h2 {
+            font: normal normal 800 32px/40px $font_2;
+            color: #16181d;
+            margin-bottom: 0;
+          }
+          .cart-icon {
+            display: none;
+          }
+        }
+        .brokerage_info {
+          padding: 29px 0;
+          border-bottom: 1px solid #e2e4e9;
+          min-height: 229px;
+          h3 {
+            font: normal normal 600 42px/50px "Inter";
+            color: #16181d;
+            text-align: center;
+            margin-bottom: 32px;
+            span {
+              display: block;
+              font: normal normal 400 16px/24px "Inter";
+              color: #16181d;
+            }
+          }
+          h4 {
+            font: normal normal 700 22px/28px "Inter";
+            color: #101828;
+            margin-bottom: 16px;
+            display: none;
+          }
+          p {
+            font: normal normal 500 16px/24px "Inter";
+            color: #16181d;
+            margin-bottom: 16px;
+          }
+          ul {
+            li {
+              font: normal normal 400 16px/24px "Inter";
+              color: #16181d;
+              margin-bottom: 16px;
+              padding-left: 32px;
+              position: relative;
+              &::after {
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                left: 0;
+                top: 4px;
+                background: url(../img/true_icon.svg) no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+          &.amount_info {
+            border-bottom: 0;
+            min-height: 208px;
+            display: none;
+            ul {
+              li {
+                font: normal normal 500 16px/24px "Inter";
+                padding-left: 0;
+                margin-bottom: 24px;
+                &::after {
+                  content: unset;
+                }
+              }
+            }
+          }
+        }
+        .open-ac-btn {
+          .btn {
+            width: 100%;
+            border: 1px solid #16181d;
+            font: normal normal 600 16px / 19px "Inter";
+            background: transparent;
+            transition: all 0.4s;
+            color: #16181d;
+            min-height: 56px;
+            &:hover {
+              color: #fff;
+              background: #2e4757;
+              border-color: #2e4757;
+            }
+          }
+        }
+        &.customize_plan {
+          .brokerage_info {
+            padding: 32px 20px;
+            h3 {
+              font: normal normal 600 32px/38px "Inter";
+              color: #16181d;
+              text-align: center;
+              margin-bottom: 44px;
+            }
+            p {
+              font: normal normal 400 16px/24px "Inter";
+              color: #16181d;
+              text-align: center;
+              margin-bottom: 24px;
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .comman_modal.partner-form-modal {
+    .partner-form {
+      .form-group.already_partner {
+        display: none;
+      }
+    }
+  }
+}
+.account-open-blog {
+  .account-open-blog-inner {
+    background-image: url(../img/account-open-bg.png);
+  }
+}
+
+.faq_question_answer:last-child {
+  border-bottom: 0;
+  border: 0;
+}
+
+.charter_list {
+  margin-bottom: 48px;
+  h2,
+  h3 {
+    font: normal normal 800 32px / 38px "Urbanist";
+    color: #0b0c0e;
+    margin-bottom: 32px;
+    @include m-767 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    @include m-575 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+  }
+  .date_drop_down {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include m-575 {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .form_date {
+      .form_control {
+        width: 100%;
+        min-width: 158px;
+        border: 1px solid #c5cad3;
+        border-radius: 8px;
+        padding: 8px 16px;
+        min-height: 52px;
+        font: normal normal 600 14px / 20px "Inter";
+        color: #16181d;
+        appearance: none;
+        outline: none;
+        background: url(../img/select_down_arrow.svg) no-repeat center right
+          16px #fff;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    li {
+      width: calc(50% - 16px);
+      @include m-575 {
+        width: 100%;
+      }
+      .charter_cart {
+        font: normal normal 500 16px / 24px "Inter";
+        color: #16181d;
+        background: #f8f8f8;
+        border: 1px solid #c5cad3;
+        border-radius: 8px;
+        padding: 8px 20px;
+        min-height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        &:hover {
+          border: 1px solid #2a948f;
+          background: #ebf9f9;
+          color: #2a948f;
+        }
+      }
+    }
+  }
+}
+
+// bhavna ma'am add
+div#tab1c {
+  display: none;
+}
+div#tab1c.active {
+  display: block;
+}
+
+div#tab2c {
+  display: none;
+}
+div#tab2c.active {
+  display: block;
+}
+
+div#tab3c {
+  display: none;
+}
+div#tab3c.active {
+  display: block;
+}
+.circulars-page {
+  .comman_tabs-sec {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+}
