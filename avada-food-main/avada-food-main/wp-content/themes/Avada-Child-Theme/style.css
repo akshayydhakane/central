@@ -1,0 +1,48 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+.fusion-logo img{
+	max-height: 50px;
+	max-width: 50px;
+}
+.site_title_sec {
+    line-height: 50px;
+    font-weight: bold;
+}
+.fusion-carousel-title.product-title.fusion-responsive-typography-calculated , 
+.fusion-carousel-title-below-image .fusion-carousel-meta, .fusion-carousel-title-below-image .fusion-carousel-title{
+	text-align: center !important;
+}
+.fusion-menu-cart-items {
+    width: 200px !important;
+}
+.fusion-posts-container.fusion-posts-container-no.fusion-blog-rollover.fusion-blog-layout-grid.fusion-blog-layout-grid-2.isotope.fusion-blog-equal-heights {
+    margin-top: 2em !important;
+}
+@media (max-width: 1000px) {
+.fusion-header-has-flyout-menu .fusion-header-has-flyout-menu-content{
+	display: inherit !important;
+}
+}
+
+@media (max-width: 480px) {
+.fusion-flyout-cart-wrapper{
+   font-size: 20px !important;
+   padding: 0px !important;
+   margin-top: 10px !important;
+}
+.fusion-header-has-flyout-menu .fusion-flyout-menu-icons .fusion-toggle-icon-line{
+	width: calc((20px) * 1.5) !important;
+    height: calc((20px) * .1) !important;
+}
+.fusion-header-has-flyout-menu .fusion-widget-cart-number{
+	font-size: 16px !important;
+	min-width: 20px !important;
+}
+}

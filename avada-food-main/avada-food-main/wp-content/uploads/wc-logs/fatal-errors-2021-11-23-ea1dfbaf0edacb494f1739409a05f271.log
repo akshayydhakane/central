@@ -1,0 +1,2 @@
+2021-11-23T08:39:21+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 32768 bytes) in D:\Xampp7.4\htdocs\avada_with_food\wp-admin\includes\ajax-actions.php on line 3923
+
